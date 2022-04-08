@@ -90,6 +90,7 @@ async function requestWeather(lat, lon) {
 }
 
 async function requestZip(zip) {
+    zipError.innerText = "";
     try {
         const { res, body } = await logFetch(owm("weather", { zip }));
         if (res.status == 200) {
