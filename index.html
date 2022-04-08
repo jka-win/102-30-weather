@@ -5,11 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JKA Weather App</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <div id="float">
+        <header class="stack">
+            <h1 id="city-name">Enter a ZIP!</h1>
+            <div id="temp-buttons">
+                <button id="temp-button-c" class="temp-button">C</button>
+                <button id="temp-button-f" class="temp-button" disabled>F</button>
+            </div>
+        </header>
+        <main class="stack">
+            <div id="weather">
+                <p id="timestamp"></p>
+                <div id="conditions">
+                    <p id="temp-current"></p>
+                    <p id="temp-high"></p>
+                    <p id="temp-low"></p>
+                    <img id="cond-icon">
+                    <p id="cond-main"></p>
+                    <p id="cond-description"></p>
+                </div>
+                <div id="forecast">
+                    <div class="cond-small">
+                        <p class="cond-small-date"></p>
+                        <img class="cond-small-icon">
+                        <p class="cond-small-weather"></p>
+                        <div class="cond-small-temp">
+                            <p class="cond-small-high"></p>
+                            <p class="cond-small-low"></p>
+                        </div>
+                    </div>
+                    <div class="cond-small">
+                        <p class="cond-small-date"></p>
+                        <img class="cond-small-icon">
+                        <p class="cond-small-weather"></p>
+                        <div class="cond-small-temp">
+                            <p class="cond-small-high"></p>
+                            <p class="cond-small-low"></p>
+                        </div>
+                    </div>
+                    <div class="cond-small">
+                        <p class="cond-small-date"></p>
+                        <img class="cond-small-icon">
+                        <p class="cond-small-weather"></p>
+                        <div class="cond-small-temp">
+                            <p class="cond-small-high"></p>
+                            <p class="cond-small-low"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="stack">
+            <div id="zip-prompt">
+                <label>ZIP Code:</label>
+                <input id="zip-input" type="text">
+                <p id="zip-error"></p>
+            </div>
+        </footer>
+    </div>
 
     <script src="index.js"></script>
 </body>
